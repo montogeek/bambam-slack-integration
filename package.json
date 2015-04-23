@@ -1,0 +1,19 @@
+{
+  "name": "bambam-slack-integration",
+  "version": "1.0.0",
+  "description": "DoBamBam! Slack integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "slack",
+    "dobambam",
+    "integration"
+  ],
+  "author": "Fernando Montoya",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "^5.1.11"
+  }
+}
