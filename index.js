@@ -1,4 +1,4 @@
-var sys = require("sys"),
+var url = require("url"),
     http = require("http"),
     https = require('https');
 
@@ -6,7 +6,8 @@ http.createServer(function(request, response) {
     response.writeHeader(200, {"Content-Type": "text/plain"});
     if (request.method === 'POST') {
       request.on('data', function(data) {
-        var toJSON = JSON.parse(data.toString());
+        var encodedData = data.toString().split('=')[1];
+        var toJSON = JSON.parse(decodeURIComponent(url.parse(encodedData, true).path.replace(/\+/g, ' ')));
         var payload = {
           text: toJSON.invoker +
                 ' a' +
@@ -18,10 +19,8 @@ http.createServer(function(request, response) {
         postToSlack(payload);
       });
     }
-    response.write("Hello World");
     response.end();
-}).listen(8080);
-console.log("Server Running on 8080")
+}).listen(process.env.PORT || 8081);
 
 function postToSlack(payload) {
   var userString = JSON.stringify(payload);
@@ -50,7 +49,6 @@ function postToSlack(payload) {
   req.on('error', function(e) {
     // TODO: handle error.
   });
-
   req.write(userString);
   req.end();
 }
