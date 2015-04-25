@@ -1,9 +1,11 @@
 {
   "name": "bambam-slack-integration",
-  "version": "1.0.0",
+  "repository": "git@github.com:montogeek/bambam-slack-integration.git",
+  "version": "0.0.1",
   "description": "DoBamBam! Slack integration",
   "main": "index.js",
   "scripts": {
+    "postinstall": "babel index.es6 > index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -11,7 +13,7 @@
     "dobambam",
     "integration"
   ],
-  "author": "Fernando Montoya",
+  "author": "Fernando Montoya <montogeek@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "babel": "^5.1.11"
