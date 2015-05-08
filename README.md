@@ -1,5 +1,6 @@
-# bambam-slack-integration
-bambam-slack-integration
+# DoBamBam Slack Integration
+
+Unofficial DoBamBam Slack integration
 
 
 ## Usage
