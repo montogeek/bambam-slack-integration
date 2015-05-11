@@ -16,6 +16,7 @@
   "author": "Fernando Montoya <montogeek@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "babel": "^5.1.11"
+    "babel": "^5.1.11",
+    "promise": "^7.0.1"
   }
 }
