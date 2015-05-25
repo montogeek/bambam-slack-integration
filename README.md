@@ -1,6 +1,6 @@
-# DoBamBam Slack Integration
+# DoBamBam!™ Slack Integration
 
-Unofficial [DoBamBam](https://www.dobambam.com/) Slack integration
+Unofficial [DoBamBam!™](https://www.dobambam.com/) Slack integration
 
 
 ## Usage
