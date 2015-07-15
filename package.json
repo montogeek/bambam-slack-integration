@@ -5,7 +5,8 @@
   "description": "DoBamBam! Slack integration",
   "main": "index.js",
   "scripts": {
-    "postinstall": "babel index.es6 > index.js",
+    "compile": "babel index.es6 > dist/index.js",
+    "prepublish": "npm run compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
