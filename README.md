@@ -2,6 +2,10 @@
 
 Unofficial [DoBamBam!™](https://www.dobambam.com/) Slack integration
 
+## Requirements
+
+- Node
+- Slack Incoming Webhooks API Code
 
 ## Usage
 
