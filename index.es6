@@ -65,24 +65,24 @@ let postToSlack = payload => {
       method: 'POST'
     }
 
-    let req = https.request(options, function(res) {
+    let req = https.request(options, (res) => {
       res.setEncoding('utf-8')
 
       let responseString = ''
 
-      res.on('data', function(data) {
+      res.on('data', (data) => {
         responseString += data
-      })
+      }
 
-      res.on('end', function() {
+      res.on('end', () => {
         let resultObject = responseString
         resolve(resultObject)
-      })
-    })
+      }
+    }
 
-    req.on('error', function(err) {
+    req.on('error', (err) => {
       reject(err)
-    })
+    }
 
     req.write(userString)
     req.end()
