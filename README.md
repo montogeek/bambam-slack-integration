@@ -1,6 +1,6 @@
 # DoBamBam!™ Slack Integration
 
-Unofficial [DoBamBam!™](https://www.dobambam.com/) Slack integration
+Unofficial [DoBamBam!™](https://www.dobambam.com/) [Slack](https://slack.com) integration
 
 ## Requirements
 
