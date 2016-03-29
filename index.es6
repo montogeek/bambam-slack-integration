@@ -1,9 +1,9 @@
 'use strict'
 
-let url = require('url')
-let http = require('http')
-let https = require('https')
-let Promise = require('promise')
+let url = require('url');
+let http = require('http');
+let https = require('https');
+let Promise = require('promise');
 
 let availableOptions = [
     'oldTaskAssignee',
