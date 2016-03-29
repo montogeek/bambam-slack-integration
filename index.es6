@@ -57,7 +57,7 @@ let availableOptions = [
 
 let postToSlack = payload => {
   let promise = new Promise((resolve, reject) => {
-    let userString = JSON.stringify(payload)
+    let userString = JSON.stringify(payload);
 
     let options = {
       host: 'hooks.slack.com',
