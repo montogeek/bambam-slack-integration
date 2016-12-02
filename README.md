@@ -1,5 +1,7 @@
 # DoBamBam!™ Slack Integration
 
+# Deprecated #
+
 Unofficial [DoBamBam!™](https://www.dobambam.com/) [Slack](https://slack.com) integration
 
 ## Requirements
